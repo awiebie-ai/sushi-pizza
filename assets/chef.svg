@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect width="240" height="240" fill="#dbd7d1"/>
+  <rect x="1" y="1" width="238" height="238" fill="none" stroke="#b8b2a8" stroke-width="1" stroke-dasharray="6 6"/>
+  <text x="50%" y="50%" font-family="Georgia, serif" font-size="10" fill="#6b6560" text-anchor="middle" dominant-baseline="middle">Retrato del chef</text>
+</svg>

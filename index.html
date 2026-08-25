@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salamanca — Sushi &amp; Pasta, Boquerón</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="_ds/classical-806beb95-b9d8-4d1f-ac7f-05451472b965/styles.css">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#dedbd6}
+a{color:var(--color-accent);text-underline-offset:3px}
+a:hover{color:var(--color-accent-600)}
+@keyframes sal-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.photo{display:block;width:100%;height:100%;object-fit:cover}
+.tab-panel{display:none}
+.tab-panel.active{display:flex}
+</style>
+</head>
+<body>
+<div style="max-width:480px;margin:0 auto;background:var(--color-bg);min-height:100vh;box-shadow:0 0 60px rgba(45,43,43,.18);overflow-x:hidden">
+
+  <header style="position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;background:color-mix(in srgb, var(--color-bg) 92%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--color-divider)">
+    <a href="#top" style="font-family:var(--font-heading);font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-text);text-decoration:none">Salamanca</a>
+    <nav style="display:flex;gap:14px;font-family:var(--font-heading);font-size:13px;letter-spacing:.06em;text-transform:uppercase">
+      <a href="#historia" style="color:var(--color-neutral-700);text-decoration:none">Historia</a>
+      <a href="#menu" style="color:var(--color-neutral-700);text-decoration:none">Menú</a>
+      <a href="#visitanos" style="color:var(--color-neutral-700);text-decoration:none">Visítanos</a>
+    </nav>
+  </header>
+
+  <section id="top" style="position:relative;height:86svh;min-height:520px;overflow:hidden">
+    <div style="position:absolute;inset:0">
+      <img class="photo" src="assets/storefront.png" alt="Fachada del restaurante Salamanca" style="object-position:center 70%;transform:scale(1.2);transform-origin:center calc(100% - 150px)">
+    </div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(32,31,29,.52) 0%, rgba(32,31,29,.18) 38%, rgba(32,31,29,.72) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 24px 34px;pointer-events:none;animation:sal-rise .9s ease both">
+      <div style="font-family:var(--font-heading);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-accent-300);font-feature-settings:'tnum'">Cabo Rojo · Puerto Rico</div>
+      <h1 style="font-family:var(--font-heading);font-weight:300;font-size:66px;line-height:.94;letter-spacing:-.02em;color:#f8f4f4;margin:12px 0 0">Salamanca</h1>
+      <div style="width:64px;height:1px;background:var(--color-accent);margin:18px 0"></div>
+      <p style="font-family:var(--font-body);font-style:italic;font-size:17px;line-height:1.5;color:#eae7e7;margin:0 0 22px;max-width:22em;text-wrap:pretty">Sushi de la costa oeste y pasta hecha a mano, en la misma mesa.</p>
+      <div style="display:flex;gap:10px;pointer-events:auto">
+        <a class="btn btn-primary" href="#menu" style="color:var(--color-accent-300);border-color:var(--color-accent-300);padding:11px 18px;font-size:14px;min-height:44px">Ver el menú</a>
+        <a class="btn btn-secondary" href="tel:+17875550142" style="color:#f8f4f4;border-color:rgba(248,244,244,.45);padding:11px 18px;font-size:14px;min-height:44px">Llamar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia" style="padding:44px 24px 8px">
+    <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-accent-700)">Nuestra historia</div>
+    <h2 style="font-family:var(--font-heading);font-weight:400;font-size:34px;line-height:1.06;margin:14px 0 18px">Dos cocinas, un mismo mar</h2>
+    <p style="text-align:justify;hyphens:auto;font-size:15.5px;line-height:1.72;margin:0 0 14px">Salamanca abrió en una casa de madera a dos cuadras del muelle de Boquerón. La familia llegó de Nápoles hace tres generaciones y se quedó por el pescado: chillo, atún, pulpo y langosta que llegan de las mismas aguas que ven nuestras mesas.</p>
+    <p style="text-align:justify;hyphens:auto;font-size:15.5px;line-height:1.72;margin:0">La cocina hace pasta fresca cada mañana y corta pescado crudo cada tarde. En medio de las dos está la sushi pizza: una base de arroz crujiente que tratamos como masa y vestimos como plato italiano. No es fusión por capricho; es lo que se cocina cuando dos abuelas comparten una estufa.</p>
+    <div class="hr" style="margin:30px 0 0"></div>
+  </section>
+
+  <section style="padding:26px 24px 4px;display:flex;gap:18px;align-items:flex-start">
+    <div style="flex:none;width:120px;height:120px;border-radius:50%;overflow:hidden">
+      <img class="photo" src="assets/chef.svg" alt="Retrato de la chef Marisol Esposito">
+    </div>
+    <div style="flex:1;min-width:0">
+      <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--color-neutral-600)">La cocina</div>
+      <h3 style="font-family:var(--font-heading);font-weight:500;font-size:23px;margin:6px 0 8px">Marisol Esposito</h3>
+      <p style="font-size:14.5px;line-height:1.65;margin:0;color:var(--color-neutral-800);text-wrap:pretty">Se formó en Ponce y en Osaka. Cocina la pasta de su abuela con las manos que aprendieron a filetear en una barra de sushi.</p>
+    </div>
+  </section>
+
+  <section id="menu" style="padding:36px 0 8px;margin-top:20px;background:var(--color-neutral-100);border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+    <div style="padding:0 24px">
+      <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-accent-700)">La carta</div>
+      <h2 style="font-family:var(--font-heading);font-weight:400;font-size:34px;line-height:1.06;margin:14px 0 4px">Menú</h2>
+      <p class="text-muted" style="font-size:13px;margin:0 0 18px">Cambia con la pesca del día. Precios en dólares.</p>
+    </div>
+
+    <div id="menu-tabs" style="display:flex;flex-wrap:wrap;gap:8px;padding:0 24px 14px">
+      <button type="button" class="menu-tab" data-tab="entradas" style="flex:none;cursor:pointer;font-family:var(--font-heading);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;min-height:40px;border-radius:var(--radius-md);background:transparent;border:1px solid var(--color-divider);color:var(--color-neutral-700)">Entradas</button>
+      <button type="button" class="menu-tab" data-tab="sushi" style="flex:none;cursor:pointer;font-family:var(--font-heading);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;min-height:40px;border-radius:var(--radius-md);background:transparent;border:1px solid var(--color-divider);color:var(--color-neutral-700)">Sushi</button>
+      <button type="button" class="menu-tab" data-tab="pizza" style="flex:none;cursor:pointer;font-family:var(--font-heading);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;min-height:40px;border-radius:var(--radius-md);background:transparent;border:1px solid var(--color-divider);color:var(--color-neutral-700)">Sushi Pizza</button>
+      <button type="button" class="menu-tab" data-tab="pasta" style="flex:none;cursor:pointer;font-family:var(--font-heading);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;min-height:40px;border-radius:var(--radius-md);background:transparent;border:1px solid var(--color-divider);color:var(--color-neutral-700)">Pasta</button>
+      <button type="button" class="menu-tab" data-tab="postres" style="flex:none;cursor:pointer;font-family:var(--font-heading);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;min-height:40px;border-radius:var(--radius-md);background:transparent;border:1px solid var(--color-divider);color:var(--color-neutral-700)">Postres</button>
+    </div>
+
+    <div style="padding:6px 24px 34px">
+
+      <div class="tab-panel" data-panel="entradas" style="flex-direction:column">
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Croquetas de salmón ahumado</div><div class="mi-desc">Bechamel de eneldo, alioli de wasabi</div></div><div class="mi-price">$9</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Carpaccio de atún</div><div class="mi-desc">Aceite de oliva de Puglia, limón, sal marina de Cabo Rojo</div></div><div class="mi-price">$14</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Edamame al ajillo</div><div class="mi-desc">Ajo confitado, guindilla, perejil</div></div><div class="mi-price">$7</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Burrata con tomate y shiso</div><div class="mi-desc">Tomate confitado, hoja de shiso, aceite de albahaca</div></div><div class="mi-price">$13</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Pulpo a la brasa</div><div class="mi-desc">Papa aplastada, ponzu de aceituna</div></div><div class="mi-price">$16</div></div>
+        <p class="text-muted" style="font-size:12px;margin:16px 0 0;font-style:italic">Servimos pan de la casa con mantequilla de miso a cada mesa.</p>
+      </div>
+
+      <div class="tab-panel active" data-panel="sushi" style="flex-direction:column">
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Roll Salamanca</div><div class="mi-desc">Langosta local, albahaca, tobiko, alioli de limón</div></div><div class="mi-price">$22</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Roll Boquerón</div><div class="mi-desc">Atún, mango, aguacate, cebollín</div></div><div class="mi-price">$16</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Roll Puglia</div><div class="mi-desc">Berenjena asada, tomate seco, mozzarella ahumada</div></div><div class="mi-price">$15</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Nigiri de chillo</div><div class="mi-desc">Dos piezas, limón y sal marina</div></div><div class="mi-price">$8</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Sashimi del día</div><div class="mi-desc">Nueve cortes de la pesca de la mañana</div></div><div class="mi-price">$18</div></div>
+        <p class="text-muted" style="font-size:12px;margin:16px 0 0;font-style:italic">El sashimi del día depende de lo que entre por el muelle.</p>
+      </div>
+
+      <div class="tab-panel" data-panel="pizza" style="flex-direction:column">
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Margarita</div><div class="mi-desc">Tomate confitado, burrata, shiso, aceite de albahaca</div></div><div class="mi-price">$19</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Rojo</div><div class="mi-desc">Atún picante, cebolla morada, alioli de sriracha</div></div><div class="mi-price">$21</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Bianca</div><div class="mi-desc">Salmón curado, ricotta de limón, alcaparras</div></div><div class="mi-price">$20</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Frutti di Mare</div><div class="mi-desc">Pulpo, camarón, ajillo, perejil</div></div><div class="mi-price">$23</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Prosciutto e Unagi</div><div class="mi-desc">Anguila glaseada, prosciutto, rúcula</div></div><div class="mi-price">$24</div></div>
+        <p class="text-muted" style="font-size:12px;margin:16px 0 0;font-style:italic">Base de arroz crujiente de 8 pulgadas, cortada en seis.</p>
+      </div>
+
+      <div class="tab-panel" data-panel="pasta" style="flex-direction:column">
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Linguine ai gamberi</div><div class="mi-desc">Camarones locales, ajillo, vino blanco</div></div><div class="mi-price">$21</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Tagliatelle al nero</div><div class="mi-desc">Tinta de calamar, chillo, limón</div></div><div class="mi-price">$26</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Rigatoni cacio e pepe</div><div class="mi-desc">Pecorino, pimienta negra, furikake</div></div><div class="mi-price">$18</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Lasaña de berenjena</div><div class="mi-desc">Berenjena asada, ricotta, salsa de tomate lenta</div></div><div class="mi-price">$19</div></div>
+        <p class="text-muted" style="font-size:12px;margin:16px 0 0;font-style:italic">Pasta fresca hecha cada mañana en la casa.</p>
+      </div>
+
+      <div class="tab-panel" data-panel="postres" style="flex-direction:column">
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Tiramisú de matcha</div><div class="mi-desc">Mascarpone, bizcocho empapado en té</div></div><div class="mi-price">$10</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Panna cotta de coco y yuzu</div><div class="mi-desc">Coco de la isla, yuzu, miel</div></div><div class="mi-price">$9</div></div>
+        <div class="menu-item"><div class="mi-main"><div class="mi-name">Mochi de pistacho</div><div class="mi-desc">Tres piezas</div></div><div class="mi-price">$8</div></div>
+        <p class="text-muted" style="font-size:12px;margin:16px 0 0;font-style:italic">Pregunte por el helado del día.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding:34px 0 30px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:0 24px 14px">
+      <h3 style="font-family:var(--font-heading);font-weight:500;font-size:22px;margin:0">En Instagram</h3>
+      <a href="#" style="font-family:var(--font-heading);font-size:13px;letter-spacing:.06em;text-decoration:none">@salamanca.pr</a>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;padding:0 24px">
+      <div class="plate" style="aspect-ratio:1;min-width:0;overflow:hidden"><img class="photo" src="assets/instagram-1.svg" alt="Foto de Salamanca en Instagram"></div>
+      <div class="plate" style="aspect-ratio:1;min-width:0;overflow:hidden"><img class="photo" src="assets/instagram-2.svg" alt="Foto de Salamanca en Instagram"></div>
+      <div class="plate" style="aspect-ratio:1;min-width:0;overflow:hidden"><img class="photo" src="assets/instagram-3.svg" alt="Foto de Salamanca en Instagram"></div>
+      <div class="plate" style="aspect-ratio:1;min-width:0;overflow:hidden"><img class="photo" src="assets/instagram-4.svg" alt="Foto de Salamanca en Instagram"></div>
+    </div>
+  </section>
+
+  <section id="visitanos" style="padding:34px 24px 40px;background:var(--color-neutral-900);color:var(--color-neutral-200)">
+    <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-accent-400)">Visítanos</div>
+    <h2 style="font-family:var(--font-heading);font-weight:300;font-size:34px;line-height:1.06;margin:14px 0 20px;color:var(--color-neutral-100)">Calle Betances 42</h2>
+
+    <div class="plate" style="width:100%;height:190px;border-color:var(--color-neutral-800);margin-bottom:20px">
+      <img class="photo" src="assets/storefront.png" alt="Fachada del restaurante Salamanca">
+    </div>
+
+    <p style="font-size:15px;line-height:1.6;margin:0 0 22px;color:var(--color-neutral-300)">Boquerón, Cabo Rojo, PR 00623<br>A dos cuadras del muelle, frente a la plaza.</p>
+
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
+      <a class="btn" href="tel:+17875550142" style="min-height:48px;font-size:16px;letter-spacing:.04em;color:var(--color-accent-300);border-color:var(--color-accent-400);width:100%">(787) 555-0142</a>
+      <a class="btn" href="https://maps.google.com/?q=Boquer%C3%B3n,+Cabo+Rojo,+PR" target="_blank" rel="noreferrer" style="min-height:48px;font-size:15px;color:var(--color-neutral-200);border-color:var(--color-neutral-700);width:100%">Cómo llegar</a>
+    </div>
+
+    <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-neutral-500);margin-bottom:10px">Horario</div>
+    <div style="display:flex;flex-direction:column">
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(248,244,244,.12);font-size:14.5px;font-feature-settings:'tnum'">
+        <span style="color:var(--color-neutral-300)">Lunes</span><span style="color:var(--color-neutral-100)">Cerrado</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(248,244,244,.12);font-size:14.5px;font-feature-settings:'tnum'">
+        <span style="color:var(--color-neutral-300)">Martes – Jueves</span><span style="color:var(--color-neutral-100)">5:00 – 10:00 pm</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(248,244,244,.12);font-size:14.5px;font-feature-settings:'tnum'">
+        <span style="color:var(--color-neutral-300)">Viernes – Sábado</span><span style="color:var(--color-neutral-100)">5:00 – 11:00 pm</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(248,244,244,.12);font-size:14.5px;font-feature-settings:'tnum'">
+        <span style="color:var(--color-neutral-300)">Domingo</span><span style="color:var(--color-neutral-100)">12:00 – 9:00 pm</span>
+      </div>
+    </div>
+
+    <div style="margin-top:34px;text-align:center;font-family:var(--font-heading);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--color-neutral-600)">Salamanca · Est. 2019</div>
+  </section>
+</div>
+
+<style>
+.menu-item{display:flex;gap:14px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--color-divider)}
+.mi-main{flex:1;min-width:0}
+.mi-name{font-family:var(--font-heading);font-weight:600;font-size:18px;line-height:1.25}
+.mi-desc{font-size:13.5px;line-height:1.55;color:var(--color-neutral-700);margin-top:3px;text-wrap:pretty}
+.mi-price{flex:none;font-family:var(--font-heading);font-size:17px;color:var(--color-accent-700);font-feature-settings:'tnum'}
+.menu-tab.is-active{background:var(--color-accent-100) !important;border-color:var(--color-accent) !important;color:var(--color-accent-700) !important}
+</style>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.menu-tab');
+  var panels = document.querySelectorAll('.tab-panel');
+  tabs.forEach(function (tab) {
+    if (tab.dataset.tab === 'sushi') tab.classList.add('is-active');
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.classList.remove('is-active'); });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+      tab.classList.add('is-active');
+      document.querySelector('.tab-panel[data-panel="' + tab.dataset.tab + '"]').classList.add('active');
+    });
+  });
+})();
+</script>
+</body>
+</html>
